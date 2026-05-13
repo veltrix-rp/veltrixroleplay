@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&family=Roboto+Mono:wght@400;600&family=Roboto:wght@100;300;400;500;700&display=swap%22');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #001F3F, #0074D9);
+    background-image: url("assets/images/bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+header{
+    background: rgba(0,0,0,0.45);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.logo{
+    width: 140px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Orbitron', sans-serif; /* Font jdid nqi */
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 8px; /* Bach t-ban m-fina mzyan */
+    
+    /* Hna 7iydna l-glow f marra */
+    text-shadow: none !important; 
+}
+
+
+header p{
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #d9ecff;
+}
+
+.btn{
+    padding: 15px 35px;
+    background: #00aeff;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #00aeff;
+}
+
+.btn:hover{
+    background: white;
+    color: #0074D9;
+    transform: scale(1.05);
+}
+
+
+.extra-buttons {
+    display: flex;
+    justify-content: center; /* hada hiya l-mohimma bach ijiw f centre */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.secondary-btn {
+    background-color: rgba(0, 0, 0, 0.5); /* lon d l-khlafya d l-button */
+    border: 1px solid #00a2ff;
+    color: white;
+    font-size: 0.8rem;
+    padding: 8px 20px;
+    border-radius: 15px; /* bach ijiw m-dowrin kif f s-sora */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.secondary-btn:hover {
+    background-color: #00a2ff;
+    color: white;
+    box-shadow: 0 0 10px #00a2ff; /* dak l-glow li bayn f s-sora */
+}
+
+.streamer-container {
+    display: flex;
+    justify-content: center; /* Bach i-ji f l-centre niachan */
+    margin-top: 15px; /* Bach may-ls9ch f dok l-buttons d rules */
+}
+
+.streamer-btn {
+    background-color: #53fc18; /* Lon d Kick l-asli */
+    color: black; /* L-ktba t-ji b l-k7al bach t-ban mzyan */
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 30px;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(83, 252, 24, 0.6); /* Glow khdar */
+    transition: 0.3s;
+}
+
+.streamer-btn:hover {
+    background-color: #45d613;
+    transform: scale(1.05); /* I-tkbar chwiya melli t-7et 3lih l-mouse */
+    box-shadow: 0 0 25px rgba(83, 252, 24, 0.9);
+}
+
+.kick-btn {
+            background-color: #1a1a1a; /* Background k-7el l-buttons blast l-khdar */
+            color: #53fc18; /* L-ktba hiya li ghadi t-koun khdra */
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: 800;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            border: 2px solid #53fc18; /* Itar khdar da7ik */
+            box-shadow: inset 0 0 10px rgba(83, 252, 24, 0.1); /* Glow dakhili sghir */
+        }
+
+        .kick-btn img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+            filter: drop-shadow(0 0 5px rgba(83, 252, 24, 0.5)); /* Glow wra l-logo d kick */
+        }
+
+        .kick-btn:hover {
+            transform: translateY(-3px);
+            background-color: #53fc18; /* Melli t-7et mouse i-reja3 kamel khdar */
+            color: black; /* O l-ktba t-reja3 k-7la */
+            box-shadow: 0 5px 20px rgba(83, 252, 24, 0.6);
+        }
+
+        .container { 
+            text-align: center; 
+            background: #0f0f0f; 
+            padding: 30px; /* Qllelna chwiya l-padding bach n-rbe7o l-m-ssafa */
+            border-radius: 25px; 
+            border: 1px solid #1a1a1a;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .streamer-list { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 12px; /* Qllelna l-farq bin l-buttons bach i-jme3hom */
+            width: 100%;
+        }
+
+        .back-link {
+            margin-top: 25px;
+            display: block; /* Rejja3nah block bach i-ji wast l-container awla ta7to */
+            color: #444;
+            text-decoration: none;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+            width: 100%; /* Bach i-ji m-centrer niachan */
+        }
+        h1 {
+    font-family: 'Orbitron', sans-serif; /* Font dyal l-gaming professional */
+    font-size: 3rem;
+    color: white; /* Lon 3adi nqi */
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    
+    /* Hna 7iydna l-glow (text-shadow) li kan kiy-ch3el */
+    text-shadow: none; 
+    
+    /* Ila bghiti t-zid liha wa7ed l-massa khfifa bach t-ban 3d (optionnel) */
+    /* text-shadow: 2px 2px 4px rgba(0,0,0,0.5); */
+}
+
+/* About Us Box - Styled b7al l-buttons */
+.about-us-box {
+    margin-top: 25px;
+    background-color: #111111; /* Nefs l-background d l-buttons */
+    border: 1px solid #53fc18; /* Itar khdar kif l-buttons */
+    border-radius: 12px; /* Nefs l-garrsa d l-buttons */
+    padding: 20px;
+    width: 100%; /* Bach i-ji f l-3ard d l-container */
+    box-sizing: border-box;
+    text-align: left; /* Bach t-koun l-9raya sahla */
+    transition: 0.3s;
+}
+
+/* Ila bghiti t-zad wa7ed l-animation sghira f l-hover b7al l-buttons */
+.about-us-box:hover {
+    border-color: white;
+}
+
+.about-us-box h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1rem;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: none !important; /* Glow dima m-7iyd */
+}
+
+.about-us-box p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.85rem;
+    color: #cccccc;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Button About Us - Theme Zr9 */
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #0074d9; /* Lon zr9 nqi */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif; /* L-font li bghiti */
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #00a2ff; /* Itar zr9 khfif */
+    transition: 0.3s;
+    text-shadow: none !important; /* Bla glow */
+    box-shadow: none !important;
+}
+
+.about-btn:hover {
+    background-color: white;
+    color: #0074d9;
+    transform: scale(1.05);
+}
+
+/* Hadchi ghadi i-t-tabbaq ghir melli t-koun l-écran sghira (Mobile) */
+@media screen and (max-width: 600px) {
+    
+    .header h1 {
+        font-size: 40px !important; /* Sgher l-ktba d Veltrix bach may-khrejch l-7arf */
+        letter-spacing: 3px !important;
+    }
+
+    .main-wrapper {
+        flex-direction: column; /* Rejja3 About Us o Streamers wa7ed ta7t wa7ed f blast jneb b jneb */
+        padding: 20px;
+        width: 90%;
+    }
+
+    .about-container, .container {
+        width: 95% !important;
+        padding: 20px !important;
+    }
+
+    .kick-btn {
+        width: 100%; /* L-buttons d l-streamers i-welliw kbar f t-tele bach i-jiw sahlin f l-clic */
+    }
+    
+    .about-btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+/* Styling l-3adi l-ga3 l-buttons */
+.buttons-grid {
+    display: flex;
+    flex-direction: column; /* Buttons wa7ed ta7t wa7ed */
+    gap: 12px; /* Farq binat-hom */
+    align-items: center;
+    width: 100%;
+}
+
+/* Response dyal t-tele (Mobile) */
+@media screen and (max-width: 480px) {
+    .header {
+        width: 90% !important; /* L-cadre l-k7el i-tsgher chwiya */
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 35px !important; /* Sgher l-ktba bach t-kfa f l-3ard */
+        letter-spacing: 2px !important;
+    }
+
+    .btn-main, .btn-sub, .btn-streamer, .btn-about {
+        width: 100%; /* L-button t-welli chada l-3ard kamel dyal l-cadre */
+        max-width: 250px;
+        font-size: 14px !important;
+        padding: 12px 0 !important;
+        margin: 0 !important; /* 7iyed l-margin li kiy-khreb l-layout */
+    }
+}
+/* Hadi ghat-s-le7 l-layout f ga3 l-ajhiza */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Response dial t-tele */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 3rem !important; /* Kabbér l-smiya dial l-server */
+        margin-top: 50px;
+    }
+
+    .btn, .btn-main, .btn-sub, .streamer-btn, .about-btn {
+        width: 85% !important; /* Kabbér l-buttons f l-3ard */
+        margin: 10px 0 !important;
+        padding: 15px !important;
+        font-size: 1.1rem !important;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7); /* Background k7el bach i-ban l-contrast */
+        border: 2px solid #0074d9; /* Itar zr9 nqi */
+        color: white !important; /* L-ktba t-welli white bach t-ban mzyan */
+        text-decoration: none;
+        border-radius: 8px;
+    }
+
+    /* L-button l-khdar dial streamers */
+    .streamer-btn {
+        border-color: #53fc18 !important;
+        color: #53fc18 !important;
+    }
+}
+/* Style l-3adi d l-buttons (PC + Mobile) */
+.btn-streamer, .btn-about {
+    display: block;
+    width: 100%;
+    max-width: 320px; /* Bach i-jiw nadyin f l-3ard */
+    margin: 15px auto;
+    padding: 15px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    text-shadow: none !important;
+}
+
+/* Theme l-khdar l-Streamers */
+.btn-streamer {
+    color: #53fc18 !important;
+    border: 2px solid #53fc18;
+}
+
+.btn-streamer:hover {
+    background-color: #53fc18;
+    color: black !important;
+}
+
+/* Theme l-zr9 l-About Us */
+.btn-about {
+    color: #0074d9 !important;
+    border: 2px solid #0074d9;
+}
+
+.btn-about:hover {
+    background-color: #0074d9;
+    color: white !important;
+}
+
+/* Responsive dyal t-tele bach i-welliw kbar b7al f image_1ca69c.jpg */
+@media screen and (max-width: 600px) {
+    .btn-streamer, .btn-about {
+        width: 85% !important; /* Bach i-jiw chadin l-blassa b7al l-buttons d l-foq */
+        font-size: 1.1rem;
+        margin: 10px auto;
+    }
+}
+.logo {
+    width: 80px; /* Awla l-9yas li bghiti */
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Ila knti k-t-khdem b GitHub/Netlify o mat-ban-ch */
+/* Jarreb t-7iyed "assets/" ila kntou 7attin kolchi f blassa wa7da */
+.logo-text {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 50px;
+    color: #0074d9; /* Theme zr9 */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+/* Style l-3adi d l-buttons (PC) */
+.button-group {
+    display: flex;
+    flex-wrap: wrap; /* Hada hwa l-sir bach mat-rkbech button foq button */
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-shadow: none !important;
+}
+
+/* Alwan d l-itär (Borders) */
+.blue-border { border: 1px solid #0074d9; }
+.green-border { border: 1px solid #53fc18; color: #53fc18; }
+.about-blue-border { border: 1px solid #0074d9; color: #0074d9; }
+
+/* --- Hadchi dial t-tele (Mobile) --- */
+@media screen and (max-width: 768px) {
+    .button-group {
+        flex-direction: column; /* Rejja3hom wa7ed ta7t wa7ed f t-tele */
+        align-items: center;
+    }
+
+    .btn {
+        width: 85%; /* Kabbér l-button f t-tele */
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+    }
+}
+/* Layout l-asli d l-PC */
+.header {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); /* Cadre transparent chwiya */
+    border-radius: 20px;
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    text-shadow: none !important;
+}
+
+/* Row 1: Discord & Rules */
+.main-buttons {
+    margin-bottom: 15px;
+}
+
+.btn-discord, .btn-rules {
+    display: inline-block;
+    padding: 12px 30px;
+    margin: 5px;
+    background-color: #00a2ff;
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Row 2: Legal & Illegal */
+.btn-sub {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 5px;
+    border: 1px solid #0074d9;
+    color: white;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.8rem;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Row 3: Streamers (Green) & About (Blue) */
+.btn-streamer {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 12px 0;
+    width: 250px;
+    border: 2px solid #53fc18;
+    color: #53fc18;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-about {
+    display: block;
+    margin: 0 auto;
+    padding: 12px 0;
+    width: 250px;
+    border: 2px solid #0074d9;
+    color: #0074d9;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* N-7iydu ay 7aja d t-tele */
+@media screen and (max-width: 600px) {
+    /* Khlliha khawya bach may-welli-ch dakchi d t-tele */
+}
+/* Had l-box hwa li fih l-mouchkil f image_1c3df6.jpg */
+.header {
+    display: flex;
+    flex-direction: column; /* Rejja3 kolchi wa7ed ta7t wa7ed */
+    align-items: center;    /* Centrer kolchi f l-wast */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 900px;       /* Bach l-cadre may-wellich kbir bzaf */
+    margin: 50px auto;      /* Bach i-ji f wast l-écran */
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6); /* Dik l-glass effect d l-k7al */
+    border-radius: 15px;
+}
+
+/* L-buttons d l-foq (Discord & Rules) */
+.main-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* L-buttons sghar (Legal & Illegal) */
+.sub-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+/* Streamers o About Us i-jiwa kbar o wa7ed ta7t wa7ed f l-wast */
+.btn-streamer, .btn-about {
+    display: block;
+    width: 280px;      /* 9ed l-buttons li f s-sora */
+    margin: 10px 0;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Alwan nichella */
+.btn-streamer {
+    border: 2px solid #53fc18;
+    color: #53fc18;
+}
+
+.btn-about {
+    border: 2px solid #0074d9;
+    color: #0074d9;
+}

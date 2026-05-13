@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Veltrix RP - Gang & Illegal Rules</title>
+    <style>
+        body { background-color: #0f0f0f; color: #e0e0e0; font-family: 'Segoe UI', Arial, sans-serif; line-height: 1.6; padding: 20px; }
+        .container { max-width: 1000px; margin: auto; background: #1a1a1a; padding: 30px; border-radius: 15px; border-top: 5px solid #ff4444; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        h1, h2 { color: #ff4444; text-align: center; text-transform: uppercase; border-bottom: 1px solid #333; padding-bottom: 10px; }
+        .section { margin-bottom: 30px; background: #222; padding: 20px; border-radius: 10px; border-right: 4px solid #ff4444; }
+        .section-title { font-size: 1.4rem; font-weight: bold; margin-bottom: 15px; display: block; color: #fff; }
+        .rule-item { margin-bottom: 10px; padding-right: 15px; position: relative; }
+        .rule-item::before { content: "•"; color: #ff4444; position: absolute; right: 0; font-weight: bold; }
+        .highlight { color: #ffbc00; font-weight: bold; }
+        .punishment { color: #ff4444; font-weight: bold; background: rgba(255, 68, 68, 0.1); padding: 2px 8px; border-radius: 4px; font-size: 0.9rem; }
+        .table-robbery { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        .table-robbery th, .table-robbery td { border: 1px solid #444; padding: 10px; text-align: center; }
+        .table-robbery th { background: #333; color: #ff4444; }
+        .important-note { background: #440000; border: 1px solid #ff4444; padding: 15px; border-radius: 8px; text-align: center; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧨 قوانين العصابات والأنشطة غير القانونية</h1>
+
+        <!-- Warnings & Removal -->
+        <div class="section">
+            <span class="section-title">⚠️ التحذيرات والإزالة (Warnings & Removal)</span>
+            <div class="rule-item">3 تحذيرات = <span class="punishment">حذف العصابة بالكامل</span>.</div>
+            <div class="rule-item">إذا مرّ 15 يومًا دون أي مشكلة، يتم حذف تحذير واحد من سجل العصابة.</div>
+            <div class="rule-item">إذا تم حظر جميع أعضاء العصابة في مشهد واحد، <span class="punishment">تُزال العصابة نهائيًا</span>.</div>
+        </div>
+
+        <!-- Gang Behavior -->
+        <div class="section">
+            <span class="section-title">🎭 سلوك العصابة (Gang Behavior)</span>
+            <div class="rule-item">العصابة التي لا تحترم نظامها الداخلي، سيتم حذفها.</div>
+            <div class="rule-item">إذا لم يستطع القائد (OG) السيطرة على الأعضاء، فسيُستبدل القائد أو تُحذف العصابة.</div>
+            <div class="rule-item">يُمنع خطف أي مدني دون سبب منطقي (مشكلة سابقة أو تصرف عدائي).</div>
+            <div class="rule-item">يُمنع زراعة المواد غير القانونية في الـ <span class="highlight">Safe Zones</span> (مستشفى، فنادق، مقرّات). <span class="punishment">المخالفة: Gang Warn</span>.</div>
+            <div class="rule-item">يُمنع إطلاق النار على الشرطة أثناء الـ Traffic Stop.</div>
+        </div>
+
+        <!-- Gang War -->
+        <div class="section">
+            <span class="section-title">⚔️ حرب العصابات (Gang War)</span>
+            <div class="rule-item">تُعلن الحرب بعد عداوة رسمية وإعلان واضح.</div>
+            <div class="rule-item">تُحدد منطقة (Zone) للحرب، وتُمنح العصابتان <span class="highlight">30 دقيقة</span> للقتال.</div>
+            <div class="rule-item">نظام السيطرة يعتمد على الكثافة العددية وعدد القتلى داخل الـ Zone.</div>
+            <div class="rule-item"><span class="highlight">الاشتباك (Raid):</span> يحق للمقتول العودة طالما الحرب فعّالة.</div>
+        </div>
+
+        <!-- Gang Members & Levels -->
+        <div class="section">
+            <span class="section-title">👥 الأعضاء والمستويات</span>
+            <div class="rule-item">أقل عدد لتنظيم عصابة: <span class="highlight">5 أفراد</span>.</div>
+            <div class="rule-item">المستوى 1: <span class="highlight">8 أفراد</span> | المستوى 2: <span class="highlight">12 فرد</span> | المستوى 3: <span class="highlight">16 فرد</span>.</div>
+            <div class="rule-item">تتطور المستويات بالمال ونقاط السمعة (Reputation).</div>
+        </div>
+
+        <!-- Robbery Rules -->
+        <div class="section">
+            <span class="section-title">💰 السطو والسرقات (Robbery Rules)</span>
+            <table class="table-robbery">
+                <tr>
+                    <th>نوع العملية</th>
+                    <th>الأعضاء</th>
+                    <th>الرهائن</th>
+                </tr>
+                <tr>
+                    <td>المنازل / المتاجر</td>
+                    <td>2 - 3</td>
+                    <td>1 (لاعب أو NPC)</td>
+                </tr>
+                <tr>
+                    <td>سطو صغير (Fleeca/Jewelry)</td>
+                    <td>4 - 6</td>
+                    <td>2 - 4</td>
+                </tr>
+                <tr>
+                    <td>سطو كبير (Pacific/Maze)</td>
+                    <td>8 - 12</td>
+                    <td>4 - 6</td>
+                </tr>
+            </table>
+            <div class="rule-item" style="margin-top:15px;">سرقة المتاجر: يجب انتظار <span class="highlight">5 دقائق</span> قبل الهروب.</div>
+            <div class="rule-item">شرط العدد: رجال الشرطة يجب أن يكونوا <span class="highlight">+1</span> على عدد العصابة.</div>
+        </div>
+
+        <!-- Identity -->
+        <div class="section">
+            <span class="section-title">🎭 المظهر والهوية</span>
+            <div class="rule-item">لباس العصابة يجب أن يكون موحّدًا ويُظهر لونها الرسمي.</div>
+            <div class="rule-item">القناع الكامل يعطي الحق للشرطة بتفتيشك.</div>
+            <div class="rule-item">سيارة العصابة المستخدمة في الهروب تبقى مطلوبة لمدة <span class="highlight">ساعتين</span>.</div>
+        </div>
+
+        <div class="important-note">
+            📢 بلاغ هام: هذه القوانين قابلة للتعديل والزيادة في أي وقت.
+        </div>
+    </div>
+</body>
+</html>
